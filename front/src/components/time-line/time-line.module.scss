@@ -1,0 +1,14 @@
+.timeline {
+  position: relative;
+}
+.months {
+  display: flex;
+  justify-content: center;
+}
+.line {
+  width: 100%;
+  border: 1px dashed var(--grayLight);
+  position: absolute;
+  bottom: 2px;
+  z-index: -1;
+}
