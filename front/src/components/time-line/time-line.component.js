@@ -10,10 +10,16 @@ import Month from "./month/month.component";
 const Timeline = () => {
   return (
     <div className={styles.timeline}>
-      {months.map((month) => (
-        <Month month={month} key={month.id} />
-      ))}
-      <div className={styles.line} />
+      <div className="grid">
+        <div className="left" />
+        <div className="middle">
+          {months.map((month) => (
+            <Month month={month} key={month.id} />
+          ))}
+          <div className={styles.line} />
+        </div>
+        <div className="right" />
+      </div>
     </div>
   );
 };

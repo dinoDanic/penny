@@ -1,0 +1,31 @@
+.bill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 5px 0;
+  font-size: 0.8rem;
+  width: 100%;
+  position: relative;
+}
+.neutral {
+  background: #fff;
+  color: var(--gray);
+  font-weight: 300;
+  border: 1px solid var(--grayLight);
+}
+.paid {
+  background: var(--successLight);
+  color: var(--success);
+}
+.notPaid {
+  background: var(--dangerLight);
+  color: var(--danger);
+}
+.line {
+  border-bottom: 1px solid var(--grayLight);
+  width: 30px;
+  position: absolute;
+  left: -20px;
+  z-index: -1;
+}

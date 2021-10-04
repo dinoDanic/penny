@@ -1,6 +1,5 @@
 .timeline {
   position: relative;
-  display: flex;
 }
 .months {
   display: flex;
@@ -11,5 +10,7 @@
   border: 1px dashed var(--grayLight);
   position: absolute;
   bottom: 2px;
+  left: 0;
+  right: 0;
   z-index: -1;
 }
