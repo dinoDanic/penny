@@ -1,15 +1,17 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
-import { userData } from "../../mock/user.data";
 import Expense from "./expense/expense.component";
+import NewExpense from "./expense/new-expense/new-expense.component";
 
 const Expenses = () => {
-  const { expenseType } = userData;
+  const expenses = useSelector((state) => state.expenses);
   return (
     <div>
-      {expenseType.map((expense) => (
+      {expenses?.map((expense) => (
         <Expense expense={expense} />
       ))}
+      <NewExpense />
     </div>
   );
 };

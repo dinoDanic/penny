@@ -4,6 +4,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 
 import usersRouter from "./routes/users.routes.js";
+import expensesRouter from "./routes/expenses.routes.js";
 
 const app = express();
 dotenv.config();
@@ -12,6 +13,7 @@ app.use(express.json());
 app.use(cors());
 
 app.use("/users", usersRouter);
+app.use("/expenses", expensesRouter);
 
 mongoose
   .connect(process.env.DB_URL)

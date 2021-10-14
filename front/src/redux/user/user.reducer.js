@@ -1,6 +1,7 @@
 import userActionType from "./user.userActionType";
 const INITIAL_STATE = {
-  email: null,
+  email: "dino.danic@gmail.com",
+  _id: "615ad4489cc2e448abab5467",
 };
 
 const userReducer = (state = INITIAL_STATE, action) => {

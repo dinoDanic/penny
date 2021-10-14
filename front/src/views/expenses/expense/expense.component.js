@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./expense.module.scss";
+
 import Bill from "./bill/bill.component";
 
 const Expense = ({ expense }) => {
